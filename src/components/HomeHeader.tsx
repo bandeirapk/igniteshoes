@@ -1,11 +1,17 @@
-import { Feather } from '@expo/vector-icons';
-import { Heading, HStack, Icon, Text, VStack, Avatar } from "native-base";
+import { Feather } from "@expo/vector-icons"
+import { Heading, HStack, Icon, Text, VStack, Avatar } from "native-base"
 
-import userPhotoDefault from "../assets/userPhotoDefault.png";
+import userPhotoDefault from "../assets/userPhotoDefault.png"
 
 export function HomeHeader() {
   return (
-    <HStack pt={16} pb={5} px={8} bg="gray.600" alignItems="center">
+    <HStack
+      pt={16}
+      pb={5}
+      px={8}
+      bg="gray.600"
+      alignItems="center"
+    >
       <Avatar
         source={userPhotoDefault}
         size={16}
@@ -15,12 +21,19 @@ export function HomeHeader() {
       />
 
       <VStack flex={1}>
-        <Text color="gray.100" fontSize="md">
+        <Text
+          color="gray.100"
+          fontSize="md"
+        >
           Olá,
         </Text>
 
-        <Heading color="gray.100" fontSize="md" fontFamily="heading">
-          Rodrigo Gonçalves
+        <Heading
+          color="gray.100"
+          fontSize="md"
+          fontFamily="heading"
+        >
+          Bandeira Magalhães
         </Heading>
       </VStack>
 
@@ -31,5 +44,5 @@ export function HomeHeader() {
         size={7}
       />
     </HStack>
-  );
+  )
 }

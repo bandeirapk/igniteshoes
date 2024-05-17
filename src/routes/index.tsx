@@ -17,7 +17,7 @@ const linking = {
   config: {
     screens: {
       details: {
-        path: "/details/:productId",
+        path: "details/:productId",
         parse: {
           productId: (productId: string) => productId
         }
